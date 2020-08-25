@@ -38,7 +38,13 @@ $(document).on('turbolinks:load', function() {
 
 
 	$('#btn2').click(function(){
-		$('#test2').slideDown(1000);
+		if ($('#test2').hasClass('active')){
+			$('#test2').removeClass('active');
+			$('#test2').css('color', 'black');
+		} else{
+			$('#test2').addClass('active');
+			$('#test2').css('color', 'red');
+		}
 	});
 });
 
