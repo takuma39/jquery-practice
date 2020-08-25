@@ -1,3 +1,36 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+	text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 12px 80px;
+  background-color: #5dca88;
+  box-shadow: 0px 5px #279C56;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  width: 50px;
+}
+
+.btn:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+
+.left {
+	float: left;
+	margin-right: 30px;
+
+}
+
+#test2 {
+	display: none;
+}
