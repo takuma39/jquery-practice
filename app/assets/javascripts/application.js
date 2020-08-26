@@ -123,8 +123,31 @@ $(document).on('turbolinks:load', function() {
 	});
 
 
+	// accordion
+	$('#btn10').click(function(){
+	    $('#test10').fadeIn();
+	});
+
+	$('.close-btn10').click(function(){
+	    $('#test10').fadeOut();
+	});
 
 
+	  // FAQのアコーディオン
+	$('.faq-list-item').click(function() {
+
+		var $answer = $(this).find('.answer');
+
+	    if($answer.hasClass('active')) {
+	    	$answer.removeClass('active');
+	    	$answer.slideUp();
+	    	$(this).find('span').text('+');
+	    } else {
+	    	$answer.addClass('active');
+	    	$answer.slideDown();
+	    	$(this).find('span').text('-');
+	    }
+	});
 
 
 });
