@@ -113,6 +113,15 @@ $(document).on('turbolinks:load', function() {
 		}
 	);
 
+	// modal
+	$('#btn9').click(function(){
+	    $('#test9').fadeIn();
+	});
+
+	$('.close-btn9').click(function(){
+	    $('#test9').fadeOut();
+	});
+
 
 
 
