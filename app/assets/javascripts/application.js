@@ -103,6 +103,16 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
+	// hover変更
+	$('.test8').hover(
+		function(){
+			$(this).css('color', 'red');
+		},
+		function(){
+			$(this).css('color', 'black');
+		}
+	);
+
 
 
 
