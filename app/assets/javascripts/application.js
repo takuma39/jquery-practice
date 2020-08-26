@@ -81,6 +81,16 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
+	$('#btn6').click(function(){
+		if ($('#test6').hasClass('active')){
+			$('#test6').removeClass('active');
+			$('#test6').find('span').css('color', 'black');
+		} else{
+			$('#test6').addClass('active');
+			$('#test6').find('span').css('color', 'red');
+		}
+	});
+
 });
 
 
