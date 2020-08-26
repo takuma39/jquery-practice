@@ -81,6 +81,7 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
+	// find
 	$('#btn6').click(function(){
 		if ($('#test6').hasClass('active')){
 			$('#test6').removeClass('active');
@@ -90,6 +91,22 @@ $(document).on('turbolinks:load', function() {
 			$('#test6').find('span').css('color', 'red');
 		}
 	});
+
+	// children
+	$('#btn7').click(function(){
+		if ($('#test7').hasClass('active')){
+			$('#test7').removeClass('active');
+			$('#test7').children('p').css('color', 'black');
+		} else{
+			$('#test7').addClass('active');
+			$('#test7').children('p').css('color', 'red');
+		}
+	});
+
+
+
+
+
 
 });
 

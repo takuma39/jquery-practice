@@ -29,6 +29,7 @@
 	float: left;
 	margin-right: 30px;
 	width: 200px;
+	height: 100px;
 
 }
 
@@ -36,10 +37,18 @@ ul {
 	width: 50px;
 }
 
-li {
+.test5 {
 	cursor: pointer;
 }
 
 p span:first-child  {
 	margin-right: 20px;
+}
+
+#test7 p {
+	float: left;
+}
+#test7 .inline {
+	float: right;
+	display: inline-block;
 }
