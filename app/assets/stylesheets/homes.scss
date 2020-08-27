@@ -6,7 +6,7 @@
 	text-align: center;
 }
 
-// ボタン
+// ボタン----------------------------------------------
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -26,7 +26,7 @@
 }
 
 
-// 一コマ
+// 一コマ----------------------------------------------
 .left {
 	float: left;
 	margin-right: 30px;
@@ -35,21 +35,21 @@
 
 }
 
-#btn5, #btn8 {
-	list-style: none;
-}
-
-// test5
+// test5----------------------------------------------
 .test5 {
 	cursor: pointer;
 }
 
-// test6
+#btn5{
+  list-style: none;
+}
+
+// test6----------------------------------------------
 p span:first-child  {
 	margin-right: 20px;
 }
 
-// test7
+// test7----------------------------------------------
 #test7 p {
 	float: left;
 }
@@ -59,7 +59,13 @@ p span:first-child  {
 }
 
 
-// test9
+// test8----------------------------------------------
+#btn8{
+  list-style: none;
+}
+
+
+// test9----------------------------------------------
 /*モーダル*/
 .background9 {
   position: fixed;
@@ -72,7 +78,7 @@ p span:first-child  {
   display: none;
 }
 
-.modal {
+.modal9 {
   position: absolute;
   top: 20%;
   left: 34%;
@@ -124,7 +130,7 @@ p span:first-child  {
 }
 
 
-// test10
+// test10----------------------------------------------
 /*モーダル*/
 .background10 {
   position: fixed;
@@ -137,10 +143,17 @@ p span:first-child  {
   display: none;
 }
 
-
-
-
-
+.modal10 {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
 
 /*アコーディオン追加 */
 .faq-list-item {
@@ -168,4 +181,103 @@ p span:first-child  {
   display: none;
   padding: 5px 0px;
   margin-bottom: 15px;
+}
+
+
+
+// test11----------------------------------------------
+/*モーダル*/
+.background11 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal11 {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.slide{
+  list-style: none;
+}
+
+.slide-wrapper {
+  // text-align: center;
+  // margin: 0 auto;
+}
+
+.slide-title {
+  margin-bottom: 20px;
+}
+
+.change-btn-wrapper {
+}
+
+.change-btn-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prev-btn {
+  cursor: pointer;
+  float: left;
+  margin-left: 30px;
+  display: none;
+}
+
+.next-btn {
+  cursor: pointer;
+  float: right;
+  margin-right: 30px
+}
+
+.slides {
+  padding: 0;
+}
+
+.slide {
+  display: none;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.active {
+  display: block;
+}
+
+.index-btn-wrapper {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
 }

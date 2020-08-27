@@ -22,7 +22,8 @@
 // });
 
 $(document).on('turbolinks:load', function() {
-	// slideUp / SlideDown
+
+// test1 // slideUp / SlideDown
 	$('#btn1').click(function(){
 		if ($('#test1').hasClass('active')){
 			$('#test1').removeClass('active');
@@ -37,7 +38,8 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
-	// color変更
+
+// test2 // color変更
 	$('#btn2').click(function(){
 		if ($('#test2').hasClass('active')){
 			$('#test2').removeClass('active');
@@ -48,7 +50,8 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
-	// text変更
+
+// test3 // text変更
 	$('#btn3').click(function(){
 		if ($('#test3').hasClass('active')){
 			$('#test3').removeClass('active');
@@ -59,7 +62,8 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
-	// html変更
+
+// test4 // html変更
 	$('#btn4').click(function(){
 		if ($('#test4').hasClass('active')){
 			$('#test4').removeClass('active');
@@ -70,7 +74,8 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
-	// this
+
+// test5 // this
 	$('.test5').click(function(){
 		if ($(this).hasClass('active')){
 			$(this).removeClass('active');
@@ -81,7 +86,8 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
-	// find
+
+// test6 // find
 	$('#btn6').click(function(){
 		if ($('#test6').hasClass('active')){
 			$('#test6').removeClass('active');
@@ -92,7 +98,8 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
-	// children
+
+// test7 // children
 	$('#btn7').click(function(){
 		if ($('#test7').hasClass('active')){
 			$('#test7').removeClass('active');
@@ -103,7 +110,8 @@ $(document).on('turbolinks:load', function() {
 		}
 	});
 
-	// hover変更
+
+// test8 // hover変更
 	$('.test8').hover(
 		function(){
 			$(this).css('color', 'red');
@@ -113,7 +121,8 @@ $(document).on('turbolinks:load', function() {
 		}
 	);
 
-	// modal
+
+// test9 // modal
 	$('#btn9').click(function(){
 	    $('#test9').fadeIn();
 	});
@@ -123,7 +132,8 @@ $(document).on('turbolinks:load', function() {
 	});
 
 
-	// accordion
+// test10 // accordion
+	// background_modal
 	$('#btn10').click(function(){
 	    $('#test10').fadeIn();
 	});
@@ -131,7 +141,6 @@ $(document).on('turbolinks:load', function() {
 	$('.close-btn10').click(function(){
 	    $('#test10').fadeOut();
 	});
-
 
 	  // FAQのアコーディオン
 	$('.faq-list-item').click(function() {
@@ -150,7 +159,50 @@ $(document).on('turbolinks:load', function() {
 	});
 
 
+// test11 // slide
+	// background_modal
+	$('#btn11').click(function(){
+	    $('#test11').fadeIn();
+	});
+
+	$('.close-btn11').click(function(){
+	    $('#test11').fadeOut();
+	});
+
+	// 関数
+	function ChangeBtn() {
+		var slideIndex = $('.slide').index($('.active'));
+		$('.change-btn').show();
+		if (slideIndex == 0) {
+			$('.prev-btn').hide();
+		} else if (slideIndex == $('.slide').length - 1) {
+			$('.next-btn').hide();
+		}
+	}
+
+
+	// index_btn
+	$('.index-btn').click(function(){
+		$('.active').removeClass('active');
+		var clickedIndex = $('.index-btn').index($(this));
+		$('.slide').eq(clickedIndex).addClass('active');
+		ChangeBtn();
+	});
+
+
+	// change_btn
+  $('.change-btn').click(function() {
+    var $displaySlide = $('.active');
+    $displaySlide.removeClass('active');
+    if ($(this).hasClass('next-btn')) {
+      $displaySlide.next().addClass('active');
+    } else {
+      $displaySlide.prev().addClass('active');
+    }
+    ChangeBtn();
+  });
+
+
+
+
 });
-
-
-
