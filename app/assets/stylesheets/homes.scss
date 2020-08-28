@@ -281,3 +281,172 @@ p span:first-child  {
   color: #fff;
   background-color: #5cabd0;
 }
+
+
+// test12----------------------------------------------
+/*モーダル*/
+.background12 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal12 {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.container12 {
+}
+
+.section-title {
+  color: #555;
+  text-align: center;
+}
+
+.section-title h3 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.section-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.call-to-action {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.option-wrapper {
+  text-align: center;
+}
+
+.option-group {
+  display: inline-block;
+}
+
+// .option-image {
+//   width: 120px;
+//   height: auto;
+// }
+
+.drink-btn {
+  cursor: pointer;
+  width: 154px;
+  margin: 10px;
+  padding: 12px 0;
+  text-align: center;
+  background-color: #5dca88;
+  box-shadow: 0px 4px #279C56;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.size-btn {
+  cursor: pointer;
+  width: 90px;
+  margin: 10px;
+  padding: 12px 0;
+  text-align: center;
+  background-color: #5dca88;
+  box-shadow: 0px 4px #279C56;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.option-btn:active{
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+.form .select-form, .form .text-form {
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  color: #202020;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all .3s;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.select-form {
+  width: 100%;
+}
+
+.text-form {
+  width: 90%;
+  height: 30px;
+}
+
+.btn-submit {
+  font-size: 20px;
+  font-weight: 600;
+  background: #5983ff;
+  border: 1px solid #5979ff;
+  color: white;
+  box-shadow: inset 0 1px 0 #5867ed;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+  padding: 10px 50px;
+  margin-top: 10px;
+}
+
+.output-inner {
+  padding: 10px 20px;
+  border: 2px dotted;
+  border-radius: 3px;
+  width: 85%;
+}
+
+.output-item {
+  font-size: 18px;
+  margin: 8px 0px;
+}
+
+.error-message {
+  color: #F51414;
+  height: 5px;
+}
+
+
+
+.container12-2 {
+  display: none;
+}
+
+.section-title2 {
+  color: #555;
+  text-align: center;
+}
+
+.section-title2 h3 {
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 25px;
+}

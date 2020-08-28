@@ -204,5 +204,55 @@ $(document).on('turbolinks:load', function() {
 
 
 
+// test12 // form操作
+	// background_modal
+	$('#btn12').click(function(){
+	    $('#test12').fadeIn();
+	});
+
+	$('.close-btn12').click(function(){
+	    $('#test12').fadeOut();
+	});
+
+
+  $('.drink-btn').click(function() {
+    var optionText = $(this).text();
+    // 変数clickedOptionに、クリックした要素のdata-optionの値を代入してください。
+    var clickedOption = $(this).attr('data-option');
+    $('#select-form1').val(clickedOption);
+  });
+
+
+    $('.size-btn').click(function() {
+    var optionText = $(this).text();
+    // 変数clickedOptionに、クリックした要素のdata-optionの値を代入してください。
+    var clickedOption = $(this).attr('data-option');
+    $('#select-form2').val(clickedOption);
+  });
+
+
+	  $('#form').submit(function() {
+	    var drink = $('#select-form1').val();
+	    var size = $('#select-form2').val();
+	    if (drink == 0) {
+	      $('#error-message1').text('ドリンクを選択してください');
+	    } else {
+	      $('#error-message1').text('');
+	    }
+
+	    if (size == 0) {
+	      $('#error-message2').text('サイズを選択してください');
+	    } else {
+	      $('#error-message2').text('');
+	    }
+
+	    if (drink != 0 && size != 0) {
+	      $('.container12').fadeOut();
+	      $('.container12-2').show();
+	    }
+
+	    return false;
+	  });
+
 
 });
