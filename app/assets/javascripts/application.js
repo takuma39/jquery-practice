@@ -217,7 +217,6 @@ $(document).on('turbolinks:load', function() {
 
   $('.drink-btn').click(function() {
     var optionText = $(this).text();
-    // 変数clickedOptionに、クリックした要素のdata-optionの値を代入してください。
     var clickedOption = $(this).attr('data-option');
     $('#select-form1').val(clickedOption);
   });
@@ -225,7 +224,6 @@ $(document).on('turbolinks:load', function() {
 
     $('.size-btn').click(function() {
     var optionText = $(this).text();
-    // 変数clickedOptionに、クリックした要素のdata-optionの値を代入してください。
     var clickedOption = $(this).attr('data-option');
     $('#select-form2').val(clickedOption);
   });
