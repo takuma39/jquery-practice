@@ -215,41 +215,49 @@ $(document).on('turbolinks:load', function() {
 	});
 
 
-  $('.drink-btn').click(function() {
-    var optionText = $(this).text();
-    var clickedOption = $(this).attr('data-option');
-    $('#select-form1').val(clickedOption);
-  });
+	$('.drink-btn').click(function() {
+		var optionText = $(this).text();
+	    var clickedOption = $(this).attr('data-option');
+
+	    $('#select-form1').val(clickedOption);
+	});
 
 
     $('.size-btn').click(function() {
-    var optionText = $(this).text();
-    var clickedOption = $(this).attr('data-option');
-    $('#select-form2').val(clickedOption);
-  });
+    	var optionText = $(this).text();
+    	var clickedOption = $(this).attr('data-option');
+
+    	$('#select-form2').val(clickedOption);
+  	});
 
 
-	  $('#form').submit(function() {
+	$('#form').submit(function() {
 	    var drink = $('#select-form1').val();
 	    var size = $('#select-form2').val();
+
 	    if (drink == 0) {
-	      $('#error-message1').text('ドリンクを選択してください');
+	    	$('#error-message1').text('ドリンクを選択してください');
 	    } else {
-	      $('#error-message1').text('');
+	    	$('#error-message1').text('');
 	    }
 
 	    if (size == 0) {
-	      $('#error-message2').text('サイズを選択してください');
+	    	$('#error-message2').text('サイズを選択してください');
 	    } else {
-	      $('#error-message2').text('');
+	    	$('#error-message2').text('');
 	    }
 
 	    if (drink != 0 && size != 0) {
-	      $('.container12').fadeOut();
-	      $('.container12-2').show();
+	    	$('.container12').fadeOut();
+	    	$('.container12-2').show();
 	    }
 
 	    return false;
+	});
+
+	  $('.continue-btn').click(function(){
+	  	$('.container12').show();
+	    $('.container12-2').fadeOut();
 	  });
 
 
