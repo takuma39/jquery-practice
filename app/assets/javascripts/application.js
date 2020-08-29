@@ -23,6 +23,8 @@
 
 $(document).on('turbolinks:load', function() {
 
+
+// ------------------------------------------------------------------
 // test1 // slideUp / SlideDown
 	$('#btn1').click(function(){
 		if ($('#test1').hasClass('active')){
@@ -37,8 +39,10 @@ $(document).on('turbolinks:load', function() {
 			$('#test1 p').text('slideDown');
 		}
 	});
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test2 // color変更
 	$('#btn2').click(function(){
 		if ($('#test2').hasClass('active')){
@@ -49,8 +53,10 @@ $(document).on('turbolinks:load', function() {
 			$('#test2').css('color', 'red');
 		}
 	});
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test3 // text変更
 	$('#btn3').click(function(){
 		if ($('#test3').hasClass('active')){
@@ -61,8 +67,10 @@ $(document).on('turbolinks:load', function() {
 			$('#test3 p').text('change text');
 		}
 	});
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test4 // html変更
 	$('#btn4').click(function(){
 		if ($('#test4').hasClass('active')){
@@ -73,8 +81,10 @@ $(document).on('turbolinks:load', function() {
 			$('#test4').html('<h3>&lt;h3&gt;html&lt;/h3&gt;</h3>');
 		}
 	});
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test5 // this
 	$('.test5').click(function(){
 		if ($(this).hasClass('active')){
@@ -85,8 +95,10 @@ $(document).on('turbolinks:load', function() {
 			$(this).css('color', 'red');
 		}
 	});
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test6 // find
 	$('#btn6').click(function(){
 		if ($('#test6').hasClass('active')){
@@ -97,8 +109,10 @@ $(document).on('turbolinks:load', function() {
 			$('#test6').find('span').css('color', 'red');
 		}
 	});
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test7 // children
 	$('#btn7').click(function(){
 		if ($('#test7').hasClass('active')){
@@ -109,8 +123,10 @@ $(document).on('turbolinks:load', function() {
 			$('#test7').children('p').css('color', 'red');
 		}
 	});
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test8 // hover変更
 	$('.test8').hover(
 		function(){
@@ -120,8 +136,10 @@ $(document).on('turbolinks:load', function() {
 			$(this).css('color', 'black');
 		}
 	);
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test9 // modal
 	$('#btn9').click(function(){
 	    $('#test9').fadeIn();
@@ -132,6 +150,7 @@ $(document).on('turbolinks:load', function() {
 	});
 
 
+// ------------------------------------------------------------------
 // test10 // accordion
 	// background_modal
 	$('#btn10').click(function(){
@@ -157,8 +176,10 @@ $(document).on('turbolinks:load', function() {
 	    	$(this).find('span').text('-');
 	    }
 	});
+// ------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------
 // test11 // slide
 	// background_modal
 	$('#btn11').click(function(){
@@ -201,9 +222,10 @@ $(document).on('turbolinks:load', function() {
     }
     ChangeBtn();
   });
+// ------------------------------------------------------------------
 
 
-
+// ------------------------------------------------------------------
 // test12 // form操作
 	// background_modal
 	$('#btn12').click(function(){
@@ -255,10 +277,41 @@ $(document).on('turbolinks:load', function() {
 	    return false;
 	});
 
-	  $('.continue-btn').click(function(){
-	  	$('.container12').show();
-	    $('.container12-2').fadeOut();
-	  });
+	$('.continue-btn').click(function(){
+		$('.container12').show();
+		$('.container12-2').fadeOut();
+	});
+// ------------------------------------------------------------------
 
+
+// ------------------------------------------------------------------
+// test13 // animate +hover
+	$('.test13').hover(
+		function(){
+			$(this).animate({
+				'font-size': '30px'
+			}, 300);
+		},
+		function(){
+			$(this).animate({
+				'font-size': '15px'
+			}, 300);
+		}
+	);
+// ------------------------------------------------------------------
+
+  // SNSボタン
+  $('.social-icon').hover(
+    function(){
+      $(this).children('span').animate({
+        'font-size':'30px'
+      }, 300);
+    },
+    function(){
+      $(this).children('span').animate({
+        'font-size':'24px'
+      }, 300);
+    }
+  );
 
 });
